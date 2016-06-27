@@ -9,6 +9,9 @@ var IndexPageView = DefaultPageView.extend({
     initElView : function( ) {
         DefaultPageView.prototype.initElView.apply(this, arguments);
 
+        var houseFilter = new HouseFilterView( );
+        this.$contentWrap.append(houseFilter.$el);
+
         for(var i = 0; i < 18; i++){
             var cellView = new HouseCellView( );
             this.$contentWrap.append(cellView.$el);
