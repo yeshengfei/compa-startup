@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>魔方金服</title>
+</head>
+<body>
+    <div class="js-page-content">
+        <div class="js-header-wrap"></div>
+        <div class="js-content-wrap"></div>
+        <div class="js-footer-wrap"></div>
+    </div>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/underscore/underscore-min.js"></script>
+    <script src="/node_modules/backbone/backbone-min.js"></script>
+    <script src="/node_modules/ali-arttemplate/dist/template.js"></script>
+    <script src="/lib-home/framework/Momfo.BaseView.js"></script>
+    <script src="/lib-home/framework/Momfo.ModuleView.js"></script>
+    <script src="/lib-home/framework/Momfo.PageView.js"></script>
+    <script src="DefaultPageView.js"></script>
+    <link rel="import" href="/components/default-theme/header/header-inline.html?__inline">
+    <link rel="import" href="/components/default-theme/footer/footer-inline.html?__inline">
+    <script>
+        $(function( ) {
+            new IndexPageView({el : '.js-page-content'});
+        });
+    </script>
+
+</body>
+</html>
