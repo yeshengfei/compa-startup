@@ -1,8 +1,31 @@
+
+@COLOR-LIGHT-GRAY : #cccccc;
+@COLOR-FONT-TXT : #888888;
+
 .header-wrap {
   height: 60px;
   width: 100%;
   position: fixed;
   top: 0;
   background: white;
-  border-bottom: solid 1px #888888;
+  border-bottom: solid 1px @COLOR-LIGHT-GRAY;
+
+
+  .header-button {
+    color: @COLOR-FONT-TXT;
+    height: 60px;
+    width: 80px;
+    line-height: 60px;
+    text-align: center;
+    border-left: solid 1px @COLOR-LIGHT-GRAY;
+  }
+
+  .title {
+    color: @COLOR-FONT-TXT;
+    display: inline-block;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    padding: 0 20px;
+  }
 }

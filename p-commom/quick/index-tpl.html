@@ -3,13 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>魔方金服</title>
+    <style>
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .clearfix:before,
+
+        .clearfix:after {
+            display: table;
+            line-height: 0;
+            content: "";
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .float-left {
+            float:left;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .theme-color {
+            color: #ff3a4e;
+        }
+
+
+    </style>
     <link type="text/css" rel="stylesheet"  href="/lib-vendor/normalize/4.1.1/normalize.min.css">
 </head>
 <body>
     <div class="js-page-content">
-        <div class="js-header-wrap"></div>
-        <div class="js-content-wrap"></div>
-        <div class="js-footer-wrap"></div>
+        <div class="js-header-wrap clearfix"></div>
+        <div class="js-content-wrap clearfix"></div>
+        <div class="js-footer-wrap clearfix"></div>
     </div>
 
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>

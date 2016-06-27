@@ -15,4 +15,8 @@ fis.match('node_modules/normalize/**.styl', {
 
 fis.match('{p, p-common, lib-home, components}/**.{css,less, js}',{
     useHash : true
-})
+});
+
+fis.match('node_modules/normalize/**.tpl', {
+    useHash : true
+});
