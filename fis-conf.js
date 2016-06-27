@@ -1,11 +1,18 @@
 
-fis.match('**/*.less', {
+fis.match('{p, p-common, lib-home, components}/**.less', {
     rExt: '.css', // from .less to .css
     parser: fis.plugin('less-2.x', {
         // fis-parser-less-2.x option
     })
 });
 
-fis.match('**/*.{css,less, js}',{
+fis.match('node_modules/normalize/**.styl', {
+    parser: fis.plugin('stylus', {
+        sourcemap: true
+    }),
+    rExt: '.css'
+});
+
+fis.match('{p, p-common, lib-home, components}/**.{css,less, js}',{
     useHash : true
 })
