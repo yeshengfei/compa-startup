@@ -4,5 +4,18 @@
 var IndexPageView = DefaultPageView.extend({
     initialize : function( ) {
         Momfo.PageView.prototype.initialize.apply(this, arguments);
+    },
+    
+    initElView : function( ) {
+        DefaultPageView.prototype.initElView.apply(this, arguments);
+
+        for(var i = 0; i < 18; i++){
+            var cellView = new HouseCellView( );
+            this.$contentWrap.append(cellView.$el);
+        }
+
+        this.$contentWrap.css({
+            'text-align' : 'center'
+        })
     }
 });
