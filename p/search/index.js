@@ -16,6 +16,9 @@ var IndexPageView = DefaultPageView.extend({
 
         this.$contentWrap.css({
             'text-align' : 'center'
+        });
+        this.$contentWrap.css({
+            'background-color' : '#eeeeee'
         })
     }
 });

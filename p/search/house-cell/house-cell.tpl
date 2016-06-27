@@ -5,6 +5,14 @@
                 width="400" height="265">
             <div class="price-wrap">￥ 10.22</div>
         </div>
+        <div class="badge-wrap float-right">
+            <span class="badge">精选</span>
+            <span class="badge">自如</span>
+        </div>
+        <div class="sub-info">
+            <div class="title">市中心美式风情公寓3室2厅</div>
+            <div class="sub-title">徐汇|上海南站</div>
+        </div>
 
     </div>
 </script>
