@@ -6,11 +6,17 @@
                      width="400" height="265">
             </a>
 
-            <div class="price-wrap">￥ 10.22</div>
+            <div class="price-wrap">￥{{price}}</div>
         </div>
         <div class="badge-wrap float-right">
-            <span class="badge">精选</span>
-            <span class="badge">自如</span>
+            {{if isChoice}}
+                <span class="badge">精选</span>
+            {{/if}}
+            {{if source == 1}}
+                <span class="badge orange">自如</span>
+            {{else}}
+                <span class="badge green">魔方</span>
+            {{/if}}
         </div>
         <div class="sub-info">
             <div class="title">市中心美式风情公寓3室2厅</div>
