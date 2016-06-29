@@ -3,14 +3,14 @@
         <div class="rule-type-wrap clearfix">
             <div class="name">类型</div>
             <div class="js-selection-wrap selection-wrap">
-                <span>整租</span>
+                <span class="active">整租</span>
                 <span>合租</span>
             </div>
         </div>
         <div class="rule-type-wrap clearfix">
             <div class="name">区域</div>
             <div class="js-selection-wrap selection-wrap">
-                <span>徐汇</span>
+                <span class="active">徐汇</span>
                 <span>闵行</span>
                 <span>浦东</span>
                 <span>闸北</span>
