@@ -9,7 +9,8 @@ var DefaultPageView = Momfo.PageView.extend({
     initElView : function( ) {
         this.$contentWrap = this.$el.find('.js-content-wrap');
         this.$contentWrap.css({
-            'padding-bottom' : '80px'
+            'padding-bottom' : '80px',
+            'padding-top' : '60px'
         })
         var header = new HeaderView( );
         this.$el.find('.js-header-wrap').html(header.$el);
