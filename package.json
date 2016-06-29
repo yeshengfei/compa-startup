@@ -23,6 +23,7 @@
     "fis3-parser-stylus": "^0.1.0",
     "jquery": "^3.0.0",
     "normalize": "^0.3.1",
+    "scrolltofixed": "^1.0.6",
     "swiper": "^3.3.1",
     "underscore": "^1.8.3"
   }

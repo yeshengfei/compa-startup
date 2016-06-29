@@ -61,7 +61,6 @@ var IndexPageView = DefaultPageView.extend({
          el : this.$contentWrap.find('.js-right-info-wrap'),
          dataObj : dataObj
       });
-      console.log(this.$contentWrap.find('.js-right-info-wrap'));
 
 
       //推荐房源卡片
@@ -97,6 +96,13 @@ var IndexPageView = DefaultPageView.extend({
 
             // 如果需要滚动条
             // scrollbar: '.swiper-scrollbar',
+         });
+         // that.$contentWrap.find('.js-right-info-wrap').scrollToFixed({
+         //    'marginTop': 60
+         // });
+         console.log($('.js-right-info-wrap'));
+         $('.js-right-info-wrap').scrollToFixed({
+            'marginTop': 60
          });
       }, 100)
    }
