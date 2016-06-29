@@ -7,9 +7,11 @@
             {{each detail.detail as value index}}
                 <div class="info-item">{{value}}</div>
             {{/each}}
-            <div class="btn-buy">
-                立即预定
-            </div>
+            <a href="http://www.ziroom.com/z/vr/60023149.html">
+                <div class="btn-buy">
+                    立即预定
+                </div>
+            </a>
         </div>
 
     </div>

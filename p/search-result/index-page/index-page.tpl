@@ -71,7 +71,8 @@
         <!--基础信息-->
         <div class="content-block">
             <div class="content-inner">
-                <div class="content-left">
+                <div class="content-block-title">推荐房源</div>
+                <div class="recommand-house-wrap">
 
                 </div>
             </div>

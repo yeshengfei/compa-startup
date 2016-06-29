@@ -55,11 +55,30 @@ var IndexPageView = DefaultPageView.extend({
 
       this.$contentWrap.html(template('indexPageTpl', dataObj));
 
+
+      //右侧列表
       new RightInfoView({
          el : this.$contentWrap.find('.js-right-info-wrap'),
          dataObj : dataObj
       });
       console.log(this.$contentWrap.find('.js-right-info-wrap'));
+
+
+      //推荐房源卡片
+      for(var i = 0; i < 4; i++) {
+         var cardCell = new HouseCellView( );
+         this.$el.find('.recommand-house-wrap').append(cardCell.$el);
+         cardCell.$el.find('.house-cell-wrap').css({
+            'margin-left' : 0,
+            'margin-top' : 0,
+            'margin-right' : '20px',
+            'margin-bottom' : '20px'
+         })
+      }
+      this.$el.find('.recommand-house-wrap').css({
+         'transform':'scale(0.817)',
+         'transform-origin': '0 0'
+      })
 
 
       var that = this;
