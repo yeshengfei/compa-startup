@@ -17,8 +17,54 @@
         </div>
         <div class="content-block">
             <div class="content-inner" style="position: relative">
-                <div class="js-right-info-wrap right-info-wrap">
+                <div class="js-right-info-wrap right-info-wrap"></div>
 
+
+                <div class="content-left left-base-info">
+                    <div class="title-name">
+                        {{detail.name}}
+                    </div>
+                    <div class="area">
+                        {{detail.area}}
+                    </div>
+                    <div class="description info-item">
+                        {{each descriptionList as value index}}
+                            {{value}} <br>
+                        {{/each}}
+                    </div>
+                    <ul class="info-item config">
+                        {{each configList as value index}}
+                            <li>
+                                <span class="
+                                    {{if value=='床'}}
+                                        bed
+                                    {{else if value=='衣柜'}}
+                                        chest
+                                    {{else if value=='书桌'}}
+                                        desk
+                                    {{else if value=='Wi-Fi'}}
+                                        wifi
+                                    {{else if value=='洗衣机'}}
+                                        washing
+                                    {{else if value=='热水器'}}
+                                        calorifier
+                                    {{else if value=='空调'}}
+                                        air-condition
+                                    {{else if value=='微波炉'}}
+                                        microwave
+                                    {{else if value=='智能锁'}}
+                                        lock
+                                    {{else}}
+                                        chair
+                                    {{/if}}
+                                "></span>{{value}}
+                            </li>
+
+                        {{/each}}
+                    </ul>
+                    <div class="item-info">
+                        <img src="images/map-sample.png" width="100%">
+                    </div>
                 </div>
             </div>
         </div>

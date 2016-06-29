@@ -4,7 +4,10 @@
 var Momfo = Momfo || {};
 Momfo.ModuleView = Momfo.BaseView.extend({
     tplId : null,
-    initialize : function( ) {
+    initialize : function(initObj) {
+        if(initObj){
+            this.dataObj = initObj.dataObj;
+        }
         Momfo.BaseView.prototype.initialize.apply(this, arguments);
         this.initElView( );
     },
