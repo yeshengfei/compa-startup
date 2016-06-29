@@ -15,12 +15,15 @@ var DefaultPageView = Momfo.PageView.extend({
             'padding-bottom' : '80px',
             'padding-top' : '60px'
         })
-        if(this.headerDef) {
-            var header = new HeaderView( );
+        var HeaderClass = this.headerDef;
+        if(HeaderClass) {
+            var header = new HeaderClass( );
             this.$el.find('.js-header-wrap').html(header.$el);
         }
-        if(this.footerDef) {
-            var footer = new FooterView( );
+
+        var FooterClass = this.footerDef;
+        if(FooterClass) {
+            var footer = new FooterClass( );
             this.$el.find('.js-footer-wrap').html(footer.$el);
         }
     }
