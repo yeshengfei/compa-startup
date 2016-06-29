@@ -2,6 +2,7 @@
  * Created by Moon on 16/6/27.
  */
 var IndexPageView = DefaultPageView.extend({
+   footerDef: null,
 
    initialize : function( ) {
       Momfo.PageView.prototype.initialize.apply(this, arguments);
