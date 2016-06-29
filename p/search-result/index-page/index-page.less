@@ -10,4 +10,33 @@
     margin: 0 auto;
     width: 1002px;
   }
+
+  .content-block {
+    height: 300px;
+
+    .content-inner {
+      width: 1002px;
+      margin: 0 auto;
+
+      .content-left {
+        width: 700px;
+
+      }
+
+      .right-info-wrap {
+        position: absolute;
+        right: 0;
+        top: -60px;
+        z-index: 30;
+      }
+    }
+  }
+
+  .content-block:nth-child(2n) {
+    background: #fff;
+  }
+
+  .content-block:nth-child(2n+1) {
+    background: #cccccc;
+  }
 }

@@ -16,6 +16,21 @@
             <div class="swiper-button-next"></div>
         </div>
         <div class="content-block">
+            <div class="content-inner" style="position: relative">
+                <div class="js-right-info-wrap right-info-wrap">
+
+                </div>
+            </div>
+        </div>
+        <!--基础信息-->
+        <div class="content-block">
+            <div class="content-inner">
+                <div class="content-left">
+
+                </div>
+            </div>
+        </div>
+        <div class="content-block">
             <div class="content-inner">
 
             </div>

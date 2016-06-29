@@ -55,6 +55,11 @@ var IndexPageView = DefaultPageView.extend({
 
       this.$contentWrap.html(template('indexPageTpl', dataObj));
 
+      new RightInfoView({
+         el : this.$contentWrap.find('.js-right-info-wrap'),
+         dataObj : this.dataObj
+      });
+      console.log(this.$contentWrap.find('.js-right-info-wrap'));
 
 
       var that = this;
