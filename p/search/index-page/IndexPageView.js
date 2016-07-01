@@ -12,14 +12,14 @@ var IndexPageView = DefaultPageView.extend({
       DefaultPageView.prototype.initElView.apply(this, arguments);
 
       var houseFilter = new HouseFilterView( );
-      this.$contentWrap.append(houseFilter.$el);
+      this.$indexPageWrap.append(houseFilter.$el);
 
       for(var i = 0; i < 18; i++){
          var cellView = new HouseCellView( );
-         this.$contentWrap.append(cellView.$el);
+         this.$indexPageWrap.append(cellView.$el);
       }
 
-      this.$contentWrap.css({
+      this.$indexPageWrap.css({
          'text-align' : 'center'
       });
       this.$contentWrap.css({
