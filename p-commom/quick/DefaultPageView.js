@@ -4,6 +4,7 @@
 var DefaultPageView = Momfo.PageView.extend({
     headerDef : HeaderView,
     footerDef : FooterView,
+    dataObj : {},
 
     initialize:function( ) {
         Momfo.PageView.prototype.initialize.apply(this, arguments);
@@ -28,7 +29,7 @@ var DefaultPageView = Momfo.PageView.extend({
             this.$el.find('.js-footer-wrap').html(footer.$el);
         }
         // console.log(template('indexPageTpl', {}));
-        this.$contentWrap.html(template('indexPageTpl', {}));
+        this.$contentWrap.html(template('indexPageTpl', this.dataObj));
         this.$indexPageWrap = this.$contentWrap.find('.js-index-page-wrap');
     }
 });
