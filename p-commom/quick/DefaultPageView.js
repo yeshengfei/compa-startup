@@ -16,6 +16,7 @@ var DefaultPageView = Momfo.PageView.extend({
             'padding-top' : '60px'
         })
         var HeaderClass = this.headerDef;
+
         if(HeaderClass) {
             var header = new HeaderClass( );
             this.$el.find('.js-header-wrap').html(header.$el);
@@ -26,5 +27,8 @@ var DefaultPageView = Momfo.PageView.extend({
             var footer = new FooterClass( );
             this.$el.find('.js-footer-wrap').html(footer.$el);
         }
+        // console.log(template('indexPageTpl', {}));
+        this.$contentWrap.html(template('indexPageTpl', {}));
+        this.$indexPageWrap = this.$contentWrap.find('.js-index-page-wrap');
     }
 });

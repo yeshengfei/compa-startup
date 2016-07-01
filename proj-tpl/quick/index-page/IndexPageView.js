@@ -9,6 +9,6 @@ var IndexPageView = DefaultPageView.extend({
    initElView : function( ) {
       DefaultPageView.prototype.initElView.apply(this, arguments);
       var moduleView = new PageModuleView( );
-      this.$contentWrap.html(moduleView.$el);
+      this.$indexPageWrap.html(moduleView.$el);
    }
 });
