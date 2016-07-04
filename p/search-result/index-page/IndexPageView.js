@@ -53,9 +53,7 @@ var IndexPageView = DefaultPageView.extend({
             // 如果需要滚动条
             // scrollbar: '.swiper-scrollbar',
          });
-         // that.$contentWrap.find('.js-right-info-wrap').scrollToFixed({
-         //    'marginTop': 60
-         // });
+
          $('.js-right-info-wrap').scrollToFixed({
             'marginTop': 60
          });
